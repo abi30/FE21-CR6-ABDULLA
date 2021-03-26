@@ -1,0 +1,20 @@
+<!-- <p>cart works!</p>
+ -->
+
+ <div *ngIf="cartItems.length===0"class="alert alert-info">Your Cart is Empty!</div>
+<ul *ngIf="cartItems.length" class="list-group">
+    <li class="list-group-item" *ngFor="let item of cartItems">
+        <app-cart-item [cartItem]=item></app-cart-item>
+    </li>
+   
+    <li *ngIf="cartTotal" class="list-group-item active">
+        <strong>Total:<br> {{cartTotal|currency:'EUR'}} </strong>
+    </li>
+    <li *ngIf="cartTotalWithTweentyPer<=1000" class="list-group-item active">
+        <strong>After -10%<br> {{cartTotalWithTenPer|currency:'EUR'}} </strong>
+    </li>
+
+    <li *ngIf="cartTotalWithTweentyPer"  class="list-group-item active">
+        <strong>After -20% <br>  {{cartTotalWithTweentyPer|currency:'EUR'}}</strong>
+    </li>
+</ul>
