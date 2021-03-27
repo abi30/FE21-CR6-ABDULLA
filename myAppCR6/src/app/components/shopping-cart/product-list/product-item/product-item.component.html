@@ -1,10 +1,16 @@
 <!-- <p>product-item works!</p> -->
 <div class="card h-100 mb-4 box-shadow">
     <img class="card-img-top productListImg" src="assets/img/{{productItem.imgUrl}}"alt="Card image cap"/>
-    <div class="card-body">
+    <div class=" card-body">
       <p class="card-text">   
-          <strong>To: {{productItem.destination}} <br>
-                 For:{{productItem.duration}} <br>
+
+                 
+        <!-- {{productItem.destination}}  -->
+          <strong>To:
+            <a routerLink="shoppingTravel/{{productItem.id}}">
+              {{productItem.destination}}
+             </a><br>
+                  For:{{productItem.duration}} <br>
                   {{productItem.price|currency:"EUR"}}
          </strong>
         </p>
@@ -18,10 +24,9 @@
           <button type="button" class="btn btn-sm btn-outline-secondary ">View Details</button>
          
         </div>
-     
       </div>
-      <div class="card-footer">
-      <small class="text-muted">{{productItem.startDate}} </small>
-    </div>
+     </div>
+    <div class="card-footer">
+      <small class="text-muted"><strong>Start:</strong> {{productItem.startDate}} </small>
     </div>
   </div>

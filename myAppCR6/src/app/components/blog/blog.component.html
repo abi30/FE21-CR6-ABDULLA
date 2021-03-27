@@ -1,0 +1,24 @@
+
+<div class="row row-cols-1 row-cols-md-2  row-cols-md-4  g-2 box-shadow ">
+    <div class="col"*ngFor ="let blog of blogList; index as productId">
+        <div class="card h-100">
+            <img class="img-fluid own" src="assets/blog/{{blog.imgUrl}}" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                
+                    <p class="blogName">{{blog.blogName}}</p>
+                    <!-- <a routerLink="blog/{{blog.id}}">
+                     {{blog.blogName}}
+                    </a> -->
+                  
+            
+            <p  class="card-text blogDescription">{{blog.description}}</p>
+            <!-- <button type="button" class="btn btn-outline-success" >info</button> -->
+        </div> 
+                <div class="card-footer">
+            
+                <small class="text-muted">visited :{{blog.date}}</small>
+                </div>
+            </div>
+        </div>
+    
+ </div>

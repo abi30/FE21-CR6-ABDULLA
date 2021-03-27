@@ -12,6 +12,10 @@ import { ProductListComponent } from './components/shopping-cart/product-list/pr
 import { CartComponent } from './components/shopping-cart/cart/cart.component';
 import { CartItemComponent } from './components/shopping-cart/cart/cart-item/cart-item.component';
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +28,15 @@ import { ProductItemComponent } from './components/shopping-cart/product-list/pr
     ProductListComponent,
     CartComponent,
     CartItemComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    BlogComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

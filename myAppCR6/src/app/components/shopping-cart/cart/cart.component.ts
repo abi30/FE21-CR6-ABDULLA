@@ -1,6 +1,9 @@
+import { CartService } from './../../../services/cart.service';
 import { Product } from './../../../models/product';
 import { MessengerService } from 'src/app/services/messenger.service';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+
 
 
 
@@ -21,9 +24,22 @@ export class CartComponent implements OnInit {
  cartTotal=0;
  cartTotalWithTenPer=0; 
  cartTotalWithTweentyPer=0; 
+  checkoutForm:any;
+  public show:boolean = false;
+  public buttonName:any = 'Show';
 
 //  dicount=0;
-  constructor(private msg:MessengerService) { }
+  constructor(private msg:MessengerService,private cartService:CartService,private formBuilder:FormBuilder) { 
+
+    this.checkoutForm = this.formBuilder.group({
+
+      name: '',
+  
+      address: ''
+  
+    });
+
+   }
 
   ngOnInit(): void {
 
@@ -85,6 +101,31 @@ export class CartComponent implements OnInit {
 
 
 
+  }
+
+
+
+
+  onSubmit(customerData:any) {
+
+    // Process checkout data here
+  
+    console.warn('Your order has been submitted', customerData);
+  
+     alert(`Your order has been submitted`);
+    this.cartItems = this.cartService.clearCart();
+  
+    this.checkoutForm.reset();
+  
+  }
+
+  toggle() {
+    this.show = !this.show;
+
+    if(this.show)  
+      this.buttonName = "Hide";
+    else
+      this.buttonName = "Show";
   }
 
 

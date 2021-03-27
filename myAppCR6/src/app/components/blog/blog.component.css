@@ -1,0 +1,19 @@
+.blogName{
+    font-size: medium;
+    font-weight: bolder;
+}
+ .col{
+    box-shadow: 0 4px 5px rgba(0 ,0, 0,0.3);
+ }
+ .box-shadow{
+    margin-top: 0.5rem;
+ }
+ 
+img{
+     padding: 0.5rem;
+    min-height:200px;
+}
+.blogDescription{
+    
+    text-align:end;
+}
