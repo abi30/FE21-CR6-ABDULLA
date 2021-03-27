@@ -1,0 +1,32 @@
+.ownheader{
+    background-color: aqua;
+
+}
+.ownheader{
+    background-image: url(../../../../assets/img/hero2.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.linkUrl{
+
+    margin-top: 20rem;
+    text-align: center;
+}
+.btn{
+    margin: 1rem;
+}
+
+h4 span{
+color:#fff;
+}
+.display-7 span{
+    color: rgb(255, 255, 255);
+}
+.herotext{
+    /* margin-top: 20rem; */
+    padding-top: -20rem;
+align-content: center;
+text-align: center;
+}
