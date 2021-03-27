@@ -14,9 +14,7 @@
     margin-top: 20rem;
     text-align: center;
 }
-.btn{
-    margin: 0rem 1rem;
-}
+
 
 h4 span{
 color:#fff;
@@ -30,3 +28,59 @@ color:#fff;
 align-content: center;
 text-align: center;
 }
+
+nav-link{}
+
+
+
+.nav-link{
+   
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 2px;
+    font-family: inherit;
+    outline:none;
+    margin: 2px;
+   
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0, 0.5);
+    cursor: pointer;
+    transition: transform 0.1s linear;
+ }
+ .nav-link:focus{
+    outline: none;
+    color: #fff;
+ 
+ }
+ .nav-link:active{
+    box-shadow:none;
+    transform: translate(2px,1.5px);
+    color: #fff;
+
+ }
+
+
+ 
+/* .own{
+   
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 2px;
+    font-family: inherit;
+    outline:none;
+    margin: 2px;
+   
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0, 0.5);
+    cursor: pointer;
+    transition: transform 0.1s linear;
+ }
+ .own:focus{
+    outline: none;
+    color: #fff;
+ 
+ } */
+ .own:active{
+    box-shadow:none;
+    transform: translate(2px,1.5px);
+    color: #fff;
+
+ }

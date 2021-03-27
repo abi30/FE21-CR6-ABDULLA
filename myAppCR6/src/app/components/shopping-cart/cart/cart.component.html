@@ -21,40 +21,26 @@
         <button class="btn btn-sm btn-outline-warning" (click)="toggle()" >Checkout</button>
     </li>
 
+    <br>
 
-<form *ngIf="show"  [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
-  
-   <div>
-  
-     <label for="name">
-  
-       Name
-  
-     </label>
-  
-     <input id="name" type="text" formControlName="name" required>
-  
-   </div>
-  
-  
-   <div>
-  
-     <label for="address">
-  
-       Address
-  
-     </label>
-  
-     <input id="address" type="text" formControlName="address" required>
-  
-   </div>
-  
-  
-   <input class="btn btn-sm btn-success " type="submit" value="Purchase">
-  
-  
-  </form>
+          <form  *ngIf="show"  [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+            <div class="mb-3">
+              <label for="name" id="name">Name:</label>
+              <input id="name" type="text" formControlName="name" required>
+            </div>
+            <div class="mb-3" id="address">
+              <label for="address" class="form-label">Address</label>
+              <input id="address" type="text" formControlName="address" required>
+            </div>
+          
+              <input class="btn btn-sm btn-success " type="submit" value="Purchase">
+            <br>
+
+          </form>
+
+
+
 
 
 </ul>

@@ -1,5 +1,5 @@
 <!-- <p>product-list works!</p> -->
-<div class="row">
+<div class="row row-cols-1 row-cols-md-4 row-cols-sm-2">
     <div class="col-md-4" *ngFor="let product of productList" >
         <!-- property binding-->
      <app-product-item [productItem]="product"></app-product-item>

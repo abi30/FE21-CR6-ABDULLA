@@ -5,3 +5,49 @@ li strong{
     font-weight: lighter;
 
 }
+.btn{
+
+}
+
+button.btn{
+   background-color: yellow;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 1rem;
+    font-family: inherit;
+    outline:none;
+   
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0, 0.5);
+    cursor: pointer;
+    transition: transform 0.1s linear;
+ }
+ button.btn:focus{
+    outline: none;
+ 
+ }
+ button.btn:active{
+    box-shadow:none;
+    transform: translate(2px,1.5px);
+ }
+
+ .btn{
+    background-color: rgb(2, 218, 38);
+     color: rgb(252, 252, 252);
+     border: none;
+     padding: 1rem;
+     font-family: inherit;
+     font-weight: bolder;
+     outline:none;
+    
+     box-shadow: 2px 2px 5px 0px rgba(0,0,0, 0.5);
+     cursor: pointer;
+     transition: transform 0.1s linear;
+  }
+  .btn:focus{
+     outline: none;
+  
+  }
+  .btn:active{
+     box-shadow:none;
+     transform: translate(2px,1.5px);
+  }
