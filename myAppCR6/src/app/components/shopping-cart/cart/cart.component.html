@@ -10,11 +10,11 @@
     <li *ngIf="cartTotal" class="list-group-item active">
         <strong>Total:<br> {{cartTotal|currency:'EUR'}} </strong>
     </li>
-    <li *ngIf="cartTotalWithTweentyPer<=1000" class="list-group-item active">
+    <li *ngIf="cartTotal>=500 && cartTotal<1000" class="list-group-item active">
         <strong>After -10%<br> {{cartTotalWithTenPer|currency:'EUR'}} </strong>
     </li>
 
-    <li *ngIf="cartTotalWithTweentyPer"  class="list-group-item active">
+    <li *ngIf="cartTotal>=1000"  class="list-group-item active">
         <strong>After -20% <br>  {{cartTotalWithTweentyPer|currency:'EUR'}}</strong>
     </li>
     <li class="list-group-item active">
